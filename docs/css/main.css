@@ -14,11 +14,30 @@
     --font-size-base: 1.125rem;
     --font-size-text: 1rem;
 
+    --weight-thin: 100;
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-black: 900;
+
     --color-btn-primary: #F0E8D5;
     --color-btn-primary-hover: #122C4F;
     --color-btn-secondary: #1B1B1B;
     --color-btn-secondary-hover: #F0E8D5;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #F0E8D5;
+}
+
 
 .hero {
     padding: 24px;
@@ -167,14 +186,12 @@
     width: 42px;
     height: 42px;
     object-fit: contain;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, .55);
-    border: 1px solid rgba(0, 0, 0, .06);
 }
 
 .proof-title {
     font-family: var(--font-base);
     font-size: var(--font-size-title-md);
+    font-weight: var(--weight-thin);
     letter-spacing: .05em;
 }
 
@@ -190,6 +207,29 @@
     filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .25));
     border-radius: 16px;
 }
+
+.hero-text {
+    font-family: var(--font-text2);
+    font-size: small;
+    grid-column: 1 / -1;
+    margin-top: 0px;
+    font-weight: var(--weight-medium);
+
+}
+
+.services {
+    padding: 24px;
+    background: var(--color-secondary);
+}
+
+.services-card {
+    background-image: url("../img/img_bg_servicios.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 
 
 @media (min-width: 1200px) {
