@@ -408,6 +408,87 @@ body {
     max-width: 100%;
 }
 
+.footer {
+    background: #1B1B1B;
+    color: var(--color-secondary);
+    padding: 40px 20px;
+    font-family: var(--font-text2);
+    text-align: center;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.footer-social {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+}
+
+.footer-social img {
+    width: 42px;
+    height: 42px;
+    filter: brightness(0) invert(1);
+    transition: transform .2s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.12);
+}
+
+.footer-links {
+    text-align: left;
+}
+
+.footer-links h3 {
+    font-family: var(--font-base);
+    margin: 0 0 12px;
+    letter-spacing: .03em;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 6px 0;
+}
+
+.footer-links a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    opacity: .9;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+.footer-copy {
+    margin: 0;
+    opacity: .85;
+    font-size: 0.95rem;
+}
+
+
 
 @media (min-width: 1600px) {
     .hero-title {
@@ -473,6 +554,15 @@ body {
         --screen-inset-right: -6%;
         --screen-inset-bottom: 12%;
         --screen-inset-left: 34%;
+    }
+
+    .footer-inner {
+        max-width: 900px;
+        gap: 24px;
+    }
+
+    .footer-top {
+        gap: 64px;
     }
 }
 
@@ -568,6 +658,36 @@ body {
 
     .device-text {
         font-size: clamp(.98rem, 4.5vw, 1.1rem);
+    }
+
+    .footer {
+        padding: 28px 16px;
+    }
+
+    .footer-top {
+        gap: 16px;
+    }
+
+    .footer-social {
+        gap: 20px;
+    }
+
+    .footer-social a {
+        padding: 6px;
+    }
+
+    .footer-social img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-links h3 {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+    }
+
+    .footer-links li {
+        margin: 4px 0;
     }
 }
 
