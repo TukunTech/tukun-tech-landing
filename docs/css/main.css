@@ -702,6 +702,8 @@ body {
     font-size: clamp(1rem, 2.1vw, 1.35rem);
     line-height: 1.4;
     opacity: .98;
+    text-align: justify;
+
 }
 
 .mv--full {
@@ -789,6 +791,128 @@ body {
     background: rgba(255, 255, 255, .14);
     pointer-events: none;
 }
+
+.team {
+    background: var(--color-secondary);
+    padding: clamp(32px, 5vw, 72px) clamp(16px, 5vw, 48px);
+}
+
+.team .member-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 3 / 4;
+}
+
+.team .member-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+}
+
+.team .member-name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center !important;
+    padding: 14px 18px;
+    font-family: var(--font-base);
+    color: var(--color-secondary);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    background: linear-gradient(to top, rgba(0, 0, 0, .38), rgba(0, 0, 0, 0));
+}
+
+.team .member-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.team .member-photo,
+.team .member-bio {
+    margin: 0;
+}
+
+.team-title {
+    font-family: var(--font-base);
+    color: var(--color-btn-secondary);
+    text-align: center;
+    letter-spacing: .06em;
+    margin: 0 0 clamp(20px, 3vw, 36px);
+    font-size: clamp(1.8rem, 4.6vw, 3.2rem);
+}
+
+.team-grid {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1280px;
+    display: grid;
+    gap: clamp(16px, 2vw, 24px);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.member-card {
+    display: grid;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: transparent;
+}
+
+.member-photo {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    aspect-ratio: 3 / 4;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.member-photo,
+.member-bio {
+    margin: 0;
+}
+
+.member-name {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 14px 18px;
+    font-family: var(--font-base);
+    color: var(--color-secondary);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-align: center;
+    font-size: clamp(1.2rem, 2.4vw, 2rem);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+    background: linear-gradient(to top, rgba(0, 0, 0, .38), rgba(0, 0, 0, 0));
+    padding: 14px 18px;
+}
+
+.member-bio {
+    background: var(--color-btn-secondary);
+    color: var(--color-secondary);
+    font-family: var(--font-text2);
+    padding: 16px 18px 20px;
+    line-height: 1.5;
+    font-size: clamp(.95rem, 1.4vw, 1rem);
+    border-radius: 0 0 20px 20px;
+    min-height: 170px;
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+}
+
 
 
 .footer {
