@@ -29,6 +29,26 @@
 
     --check-size: clamp(18px, 1.6vw, 24px);
     --check-gap: 14px;
+
+    --ease-out: cubic-bezier(.2, .65, .25, 1);
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+        opacity .6s var(--ease-out),
+        transform .6s var(--ease-out);
+    will-change: opacity, transform;
+}
+
+.is-visible[data-animate] {
+    opacity: 1;
+    transform: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -1353,5 +1373,17 @@ body {
 
     .hero-img {
         width: clamp(240px, 28vw, 420px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    [data-animate] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
     }
 }
