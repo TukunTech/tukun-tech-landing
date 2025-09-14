@@ -913,6 +913,60 @@ body {
     text-align: justify;
 }
 
+.about-video {
+    background: var(--color-secondary);
+    padding: clamp(32px, 5vw, 72px) clamp(16px, 5vw, 48px);
+}
+
+.about-video__grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(140px, .28fr) 0.9fr minmax(300px, .8fr);
+    gap: clamp(20px, 3.8vw, 48px);
+    align-items: center;
+}
+
+.video-title {
+    font-family: var(--font-base);
+    color: var(--color-btn-secondary);
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    line-height: .92;
+    margin: 0;
+    font-size: clamp(1.4rem, 4.4vw, 3.2rem);
+}
+
+.video-embed {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    background: #000;
+    max-width: clamp(420px, 46vw, 820px);
+    margin-inline: auto;
+    border-radius: 12px;
+}
+
+.video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+.video-copy {
+    font-family: var(--font-text2);
+    color: var(--color-btn-secondary);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.5;
+    text-align: justify;
+}
+
 
 
 .footer {
