@@ -163,6 +163,20 @@ body {
     margin: 18px 0 22px;
 }
 
+.hero-header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+
+    background: linear-gradient(90deg,
+            rgba(240, 232, 213, .92) 0%,
+            rgba(18, 44, 79, .92) 60%);
+    backdrop-filter: saturate(140%) blur(4px);
+    padding: 12px 24px;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -1084,9 +1098,9 @@ body {
 }
 
 .lang-switch:hover {
-  transform: translateY(-1px);
-  background: var(--color-btn-primary-hover);
-  color: var(--color-btn-primary);
+    transform: translateY(-1px);
+    background: var(--color-btn-primary-hover);
+    color: var(--color-btn-primary);
 }
 
 .lang-switch:active {

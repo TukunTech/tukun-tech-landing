@@ -136,6 +136,43 @@ document.addEventListener('DOMContentLoaded', () => {
   const browserLang = (navigator.language || '').slice(0, 2).toLowerCase();
   const initialLang = (saved || (browserLang === 'es' || browserLang === 'en' ? browserLang : DEFAULT_LANG));
 
+  const header = document.querySelector('.hero-header');
+  const heroCard = document.querySelector('.hero-card');
+
+  function applyNavOffset() {
+    if (!header || !heroCard) return;
+    const h = header.offsetHeight || 0;
+    heroCard.style.paddingTop = `calc(32px + ${h}px)`;
+  }
+
+  function clearNavOffset() {
+    if (!heroCard) return;
+    heroCard.style.paddingTop = '32px';
+  }
+
+
+  function onScroll() {
+    if (!header || !heroCard) return;
+    if (window.scrollY > 8) {
+      if (!header.classList.contains('is-fixed')) {
+        header.classList.add('is-fixed');
+        heroCard.classList.add('with-nav-offset');
+        applyNavOffset();
+      }
+    } else {
+      header.classList.remove('is-fixed');
+      heroCard.classList.remove('with-nav-offset');
+      clearNavOffset();
+    }
+  }
+
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', () => {
+    if (header?.classList.contains('is-fixed')) applyNavOffset();
+  });
+
+
   function applyI18n(lang) {
     document.documentElement.setAttribute('lang', lang);
     const dict = translations[lang] || translations[DEFAULT_LANG];
