@@ -80,7 +80,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 12px;
     margin-bottom: 18px;
 }
 
@@ -1067,6 +1067,34 @@ body {
     opacity: .85;
     font-size: 0.95rem;
 }
+
+.lang-switch {
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-family: var(--font-base);
+    font-size: .95rem;
+    letter-spacing: .02em;
+    background: var(--color-btn-secondary);
+    color: var(--color-btn-primary);
+    box-shadow: 0 2px 2px #000000;
+    transition: transform .15s ease;
+}
+
+.lang-switch:hover {
+  transform: translateY(-1px);
+  background: var(--color-btn-primary-hover);
+  color: var(--color-btn-primary);
+}
+
+.lang-switch:active {
+    transform: translateY(0);
+}
+
+
+
 
 
 @media (min-width: 1600px) {

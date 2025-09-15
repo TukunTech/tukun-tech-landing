@@ -17,35 +17,54 @@
   <section class="hero">
     <div class="hero-card">
       <div class="hero-header">
-        <div class="brand">TUKUNTECH</div>
-        <nav class="hero-nav"> <a href="#servicios">PRODUCTO</a> <a href="#planes">PLANES</a> <a
-            href="#mision-vision">NOSOTROS</a> <a class="chip" href="#inicio" aria-current="page" role="button">INICIO</a>
+        <div class="brand" data-i18n="brand">TUKUNTECH</div>
+
+        <nav class="hero-nav">
+          <a href="#servicios" data-i18n="nav.product">PRODUCTO</a>
+          <a href="#planes" data-i18n="nav.plans">PLANES</a>
+          <a href="#mision-vision" data-i18n="nav.about">NOSOTROS</a>
+          <a class="chip" href="#inicio" aria-current="page" role="button" data-i18n="nav.home">INICIO</a>
+          <button type="button" id="lang-switch" class="lang-switch" aria-label="Cambiar idioma">
+            ESP
+          </button>
         </nav>
+
       </div>
+
       <div class="hero-body">
         <div class="hero-left">
           <div class="hero-copy">
-            <h1 class="hero-title">CUIDA LO QUE <br> MÁS TE IMPORTA</h1>
-            <p class="hero-subtitle">Cuida tu salud con la mejor <br> tecnología y de la manera más fácil.</p>
+            <h1 class="hero-title" data-i18n="hero.title">CUIDA LO QUE <br> MÁS TE IMPORTA</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">
+              Cuida tu salud con la mejor <br> tecnología y de la manera más fácil.
+            </p>
           </div>
-          <div class="hero-cta"> <a class="btn btn-primary" href="#servicios">DESCUBRE MÁS</a> <a
-              class="btn btn-secondary" href="#contacto">CONTACTAR »</a> </div>
-          <div class="hero-proof"> <img class="hero-icon" src="img/img_hero_icon.png" alt="Icono">
-            <div class="proof-title">10K DOWNLOAD</div>
-            <h3 class="hero-text">Más de 10mil usuarios confían y trabajan con nuestra aplicación</h3>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#servicios" data-i18n="hero.cta.discover">DESCUBRE MÁS</a>
+            <a class="btn btn-secondary" href="#contacto" data-i18n="hero.cta.contact">CONTACTAR »</a>
+          </div>
+          <div class="hero-proof">
+            <img class="hero-icon" src="img/img_hero_icon.png" alt="Icono">
+            <div class="proof-title" data-i18n="hero.proof.title">10K DOWNLOAD</div>
+            <h3 class="hero-text" data-i18n="hero.proof.text">
+              Más de 10mil usuarios confían y trabajan con nuestra aplicación
+            </h3>
           </div>
         </div>
-        <div class="hero-right"> <img class="hero-img" src="img/img_mano_hero.png" alt="App en el teléfono"> </div>
+        <div class="hero-right">
+          <img class="hero-img" src="img/img_mano_hero.png" alt="App en el teléfono">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section id="servicios" class="services" data-animate="up">
-    <div class="services-card"> <img class="services-bg" src="img/img_bg_servicios.png" alt="">
+    <div class="services-card">
+      <img class="services-bg" src="img/img_bg_servicios.png" alt="">
       <div class="services-inner">
         <div class="services-left">
-          <h2 class="services-title">NUESTROS<br>SERVICIOS</h2>
+          <h2 class="services-title" data-i18n="services.title">NUESTROS<br>SERVICIOS</h2>
           <ul class="services-icons">
             <li data-service="atencion"><img src="img/img_servicios_1.png" alt="Atención médica"></li>
             <li data-service="disponibilidad"><img src="img/img_servicios_2.png" alt="Disponibilidad"></li>
@@ -54,13 +73,14 @@
             <li data-service="oxigeno"><img src="img/img_servicios_5.png" alt="Oxígeno"></li>
             <li data-service="reportes"><img src="img/img_servicios_6.png" alt="Reportes"></li>
           </ul>
-          <p class="services-note"> Pensamos en ti para brindar la mejor calidad de servicio. </p>
+          <p class="services-note" data-i18n="services.note">Pensamos en ti para brindar la mejor calidad de servicio.
+          </p>
         </div>
         <div class="services-right">
-          <div class="device-wrap"> <img class="services-device" src="img/img_servicios_pc.png"
-              alt="TukunTech en monitor">
-            <div class="device-overlay" aria-hidden="true"> <button class="device-close" type="button"
-                aria-label="Cerrar">✕</button>
+          <div class="device-wrap">
+            <img class="services-device" src="img/img_servicios_pc.png" alt="TukunTech en monitor">
+            <div class="device-overlay" aria-hidden="true">
+              <button class="device-close" type="button" aria-label="Cerrar">✕</button>
               <div class="device-content">
                 <h4 class="device-title"></h4>
                 <p class="device-text"></p>
@@ -74,64 +94,76 @@
 
   <!-- PLANES -->
   <section id="planes" class="plans" data-animate="up" data-stagger=".plan">
-    <h2 class="plans-title">PLANES</h2>
+    <h2 class="plans-title" data-i18n="plans.title">PLANES</h2>
+
     <div class="plans-grid">
       <article class="plan plan--light" data-monthly="20" data-annual="220" data-billing="monthly">
         <header class="plan-header">
           <div>
-            <h3 class="plan-name">PLAN<br>INDIVIDUAL</h3>
-            <p class="plan-desc">Ideal para usuarios que desean un control personal de su estado de salud.</p>
+            <h3 class="plan-name" data-i18n="plans.individual.name">PLAN<br>INDIVIDUAL</h3>
+            <p class="plan-desc" data-i18n="plans.individual.desc">
+              Ideal para usuarios que desean un control personal de su estado de salud.
+            </p>
           </div>
-          <div class="plan-icon" aria-hidden="true"> <img src="img/ic_plan_individual.png" alt=""> </div>
+          <div class="plan-icon" aria-hidden="true"><img src="img/ic_plan_individual.png" alt=""></div>
         </header>
-        <li class="feature"> <span class="feature-label">Acceso a 1 dispositivo</span> <span class="feature-end"
-            aria-hidden="true"><img src="img/ic_plan_ind_opc1.png" alt=""><img src="img/ic_plan_ind_opc2.png"
-              alt=""></span> </li>
-        <li class="feature"> <span class="feature-label">Monitoreo en tiempo real</span> <span class="feature-end"
-            aria-hidden="true"><img src="img/ic_plan_ind_opc3.png" alt=""></span> </li>
-        <li class="feature"> <span class="feature-label">Alertas inmediatas</span> <span class="feature-end"
-            aria-hidden="true"><img src="img/ic_plan_ind_opc4.png" alt=""></span> </li>
-        <li class="feature"> <span class="feature-label">Historial constante</span> <span class="feature-end"
-            aria-hidden="true"><img src="img/ic_plan_ind_opc5.png" alt=""></span> </li>
-        </ul>
+        <!-- Como ya tienes imágenes/íconos, solo traducimos las etiquetas -->
+        <li class="feature"><span class="feature-label" data-i18n="plans.individual.f1">Acceso a 1
+            dispositivo</span><span class="feature-end" aria-hidden="true"><img src="img/ic_plan_ind_opc1.png"
+              alt=""><img src="img/ic_plan_ind_opc2.png" alt=""></span></li>
+        <li class="feature"><span class="feature-label" data-i18n="plans.individual.f2">Monitoreo en tiempo
+            real</span><span class="feature-end" aria-hidden="true"><img src="img/ic_plan_ind_opc3.png" alt=""></span>
+        </li>
+        <li class="feature"><span class="feature-label" data-i18n="plans.individual.f3">Alertas inmediatas</span><span
+            class="feature-end" aria-hidden="true"><img src="img/ic_plan_ind_opc4.png" alt=""></span></li>
+        <li class="feature"><span class="feature-label" data-i18n="plans.individual.f4">Historial constante</span><span
+            class="feature-end" aria-hidden="true"><img src="img/ic_plan_ind_opc5.png" alt=""></span></li>
+
         <div class="plan-actions">
-          <div class="plan-option"> <button type="button" class="toggle">PLAN MENSUAL</button>
-            <div class="plan-price plan-price--monthly"> <span class="currency">$</span><span class="amount">20</span>
+          <div class="plan-option">
+            <button type="button" class="toggle" data-i18n="plans.monthly">PLAN MENSUAL</button>
+            <div class="plan-price plan-price--monthly"><span class="currency">$</span><span class="amount">20</span>
             </div>
           </div>
-          <div class="plan-option"> <button type="button" class="toggle toggle--danger">PLAN ANUAL</button>
-            <div class="plan-price plan-price--annual"> <span class="currency">$</span><span class="amount">220</span>
+          <div class="plan-option">
+            <button type="button" class="toggle toggle--danger" data-i18n="plans.annual">PLAN ANUAL</button>
+            <div class="plan-price plan-price--annual"><span class="currency">$</span><span class="amount">220</span>
             </div>
           </div>
         </div>
       </article>
+
       <article class="plan plan--dark" data-monthly="50" data-annual="550" data-billing="monthly">
         <header class="plan-header">
-          <div class="plan-icon" aria-hidden="true"> <img src="img/ic_plan_familiar.png" alt=""> </div>
+          <div class="plan-icon" aria-hidden="true"><img src="img/ic_plan_familiar.png" alt=""></div>
           <div>
-            <h3 class="plan-name">PLAN<br>FAMILIAR</h3>
-            <p class="plan-desc">Ideal para familias que desean acompañar y monitorear de forma preventiva a sus seres
-              queridos.</p>
+            <h3 class="plan-name" data-i18n="plans.family.name">PLAN<br>FAMILIAR</h3>
+            <p class="plan-desc" data-i18n="plans.family.desc">
+              Ideal para familias que desean acompañar y monitorear de forma preventiva a sus seres queridos.
+            </p>
           </div>
         </header>
         <ul class="plan-features">
-          <li class="feature"> <span class="feature-label">Acceso hasta 4 dispositivos</span> <span class="feature-end"
-              aria-hidden="true"><img src="img/ic_plan_fam_opc1.png" alt=""><img src="img/ic_plan_fam_opc2.png"
-                alt=""></span> </li>
-          <li class="feature"> <span class="feature-label">Monitoreo en tiempo real</span> <span class="feature-end"
-              aria-hidden="true"><img src="img/ic_plan_fam_opc3.png" alt=""></span> </li>
-          <li class="feature"> <span class="feature-label">Alertas inmediatas</span> <span class="feature-end"
-              aria-hidden="true"><img src="img/ic_plan_fam_opc4.png" alt=""></span> </li>
-          <li class="feature"> <span class="feature-label">Historial constante</span> <span class="feature-end"
-              aria-hidden="true"><img src="img/ic_plan_fam_opc5.png" alt=""></span> </li>
+          <li class="feature"><span class="feature-label" data-i18n="plans.family.f1">Acceso hasta 4
+              dispositivos</span><span class="feature-end" aria-hidden="true"><img src="img/ic_plan_fam_opc1.png"
+                alt=""><img src="img/ic_plan_fam_opc2.png" alt=""></span></li>
+          <li class="feature"><span class="feature-label" data-i18n="plans.family.f2">Monitoreo en tiempo
+              real</span><span class="feature-end" aria-hidden="true"><img src="img/ic_plan_fam_opc3.png" alt=""></span>
+          </li>
+          <li class="feature"><span class="feature-label" data-i18n="plans.family.f3">Alertas inmediatas</span><span
+              class="feature-end" aria-hidden="true"><img src="img/ic_plan_fam_opc4.png" alt=""></span></li>
+          <li class="feature"><span class="feature-label" data-i18n="plans.family.f4">Historial constante</span><span
+              class="feature-end" aria-hidden="true"><img src="img/ic_plan_fam_opc5.png" alt=""></span></li>
         </ul>
         <div class="plan-actions">
-          <div class="plan-option"> <button type="button" class="toggle">PLAN MENSUAL</button>
-            <div class="plan-price plan-price--monthly"> <span class="currency">$</span><span class="amount">50</span>
+          <div class="plan-option">
+            <button type="button" class="toggle" data-i18n="plans.monthly">PLAN MENSUAL</button>
+            <div class="plan-price plan-price--monthly"><span class="currency">$</span><span class="amount">50</span>
             </div>
           </div>
-          <div class="plan-option"> <button type="button" class="toggle toggle--danger">PLAN ANUAL</button>
-            <div class="plan-price plan-price--annual"> <span class="currency">$</span><span class="amount">550</span>
+          <div class="plan-option">
+            <button type="button" class="toggle toggle--danger" data-i18n="plans.annual">PLAN ANUAL</button>
+            <div class="plan-price plan-price--annual"><span class="currency">$</span><span class="amount">550</span>
             </div>
           </div>
         </div>
@@ -139,48 +171,41 @@
     </div>
   </section>
 
-  <!--MISIÓN / VISIÓN -->
+  <!-- MISIÓN/VISIÓN -->
   <section id="mision-vision" class="mv mv--full" data-animate="up" data-stagger=".mv-card">
     <div class="mv-grid">
-
       <article class="mv-card mv--mission" aria-labelledby="mv-title-mision">
         <div class="mv-content">
-          <h3 id="mv-title-mision" class="mv-title">MISION</h3>
-          <p class="mv-text">
+          <h3 id="mv-title-mision" class="mv-title" data-i18n="mv.mission.title">MISION</h3>
+          <p class="mv-text" data-i18n="mv.mission.text">
             Ser la solución líder en monitoreo de salud basada en IoT, transformando la forma en que
-            se brinda atención médica al brindar una vigilancia continua, precisa y proactiva que permita
-            a los profesionales de la salud salvar vidas, mejorar la calidad de la atención y reducir la
-            dependencia de los métodos tradicionales en todo el mundo.
+            se brinda atención médica […]
           </p>
         </div>
       </article>
 
       <article class="mv-card mv--vision" aria-labelledby="mv-title-vision">
         <div class="mv-content mv-content--right">
-          <h3 id="mv-title-vision" class="mv-title">VISION</h3>
-          <p class="mv-text">
+          <h3 id="mv-title-vision" class="mv-title" data-i18n="mv.vision.title">VISION</h3>
+          <p class="mv-text" data-i18n="mv.vision.text">
             Ser la solución líder en monitoreo de salud basada en IoT, transformando la forma en que
-            se brinda atención médica al brindar una vigilancia continua, precisa y proactiva que permita
-            a los profesionales de la salud salvar vidas, mejorar la calidad de la atención y reducir la
-            dependencia de los métodos tradicionales en todo el mundo.
+            se brinda atención médica […]
           </p>
         </div>
       </article>
-
     </div>
   </section>
 
   <!-- EQUIPO -->
   <section id="equipo" class="team" data-animate="up" data-stagger=".member-card">
-    <h2 class="team-title">NUESTRO EQUIPO</h2>
-
+    <h2 class="team-title" data-i18n="team.title">NUESTRO EQUIPO</h2>
     <ul class="team-grid">
       <li class="member-card">
         <figure class="member-photo">
           <img src="img/img_Adriana.png" alt="Adriana" loading="lazy">
           <figcaption class="member-name">ADRIANA</figcaption>
         </figure>
-        <div class="member-bio">
+        <div class="member-bio" data-i18n="team.adriana.bio">
           Soy Adriana Palomares, tengo 22 años y soy estudiante de Ingeniería de Software en la UPC. Disfruto explorando
           nuevas tecnologías, especialmente la programación. También me apasionan los animales, en especial los perros.
         </div>
@@ -191,7 +216,7 @@
           <img src="img/img_Erick.png" alt="Erick" loading="lazy">
           <figcaption class="member-name">ERICK</figcaption>
         </figure>
-        <div class="member-bio">
+        <div class="member-bio" data-i18n="team.erick.bio">
           Estoy en séptimo ciclo de Ingeniería de Software. Me gustan los videojuegos e ir al gimnasio. Soy responsable,
           centrado y con muchas ganas de aprender sobre IA y programación web.
         </div>
@@ -202,7 +227,7 @@
           <img src="img/img_Fabio.png" alt="Fabio" loading="lazy">
           <figcaption class="member-name">FABIO</figcaption>
         </figure>
-        <div class="member-bio">
+        <div class="member-bio" data-i18n="team.fabio.bio">
           Estudiante de Ingeniería de Software. Me considero proactivo, con buenas habilidades de trabajo en equipo y
           liderazgo. Disfruto trabajando en equipo para ofrecer calidad.
         </div>
@@ -213,7 +238,7 @@
           <img src="img/img_Oscar.png" alt="Oscar" loading="lazy">
           <figcaption class="member-name">OSCAR</figcaption>
         </figure>
-        <div class="member-bio">
+        <div class="member-bio" data-i18n="team.oscar.bio">
           Estudiante de Ingeniería de Software con enfoque proactivo en la resolución de problemas. Experiencia con C++,
           HTML, CSS, JavaScript y Python en diversos proyectos tecnológicos.
         </div>
@@ -224,7 +249,7 @@
           <img src="img/img_Rafael.png" alt="Rafael" loading="lazy">
           <figcaption class="member-name">RAFAEL</figcaption>
         </figure>
-        <div class="member-bio">
+        <div class="member-bio" data-i18n="team.rafael.bio">
           Séptimo ciclo de Ingeniería de Software. Me gustan los videojuegos y el gimnasio. Soy centrado, responsable y
           me interesa aprender IA y tecnologías web.
         </div>
@@ -232,55 +257,45 @@
     </ul>
   </section>
 
-  <!-- VIDEO ABOUT THE TEAM-->
+
+  <!-- VIDEO -->
   <section id="equipo-video" class="about-video" data-animate="up">
     <div class="about-video__grid">
-      <h2 class="video-title">
-        VIDEO<br>ABOUT<br>THE TEAM
-      </h2>
-
+      <h2 class="video-title" data-i18n="video.title">VIDEO<br>ABOUT<br>THE TEAM</h2>
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/__45dTjz2U8?autoplay=1&mute=1" title="TukunTech team video" loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"
+        <iframe src="https://www.youtube.com/embed/__45dTjz2U8?autoplay=1&mute=1" title="TukunTech team video"
+          loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen>
         </iframe>
       </div>
-
       <div class="video-copy">
-        <p>
-          Nuestro equipo en TukunTech está compuesto por personas dedicadas y apasionadas que trabajan juntas para
-          garantizar el éxito de nuestra misión. En este video, conocerá a las personas detrás de nuestras innovadoras
-          soluciones de monitoreo de la salud y aprenderá cómo nos esforzamos por marcar la diferencia en la atención
-          médica con tecnología de vanguardia y trabajo en equipo.
+        <p data-i18n="video.copy">
+          Nuestro equipo en TukunTech está compuesto por personas dedicadas […]
         </p>
       </div>
     </div>
   </section>
 
-
-
-
-
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-social"> <a href="#" aria-label="YouTube"><img src="img/logo_yt.png" alt=""></a> <a href="#"
-            aria-label="Instagram"><img src="img/logo_ig.png" alt=""></a> <a href="#" aria-label="Facebook"><img
-              src="img/logo_fb.png" alt=""></a> </div>
+        <div class="footer-social"></div>
         <div class="footer-links">
-          <h3>CONTÁCTANOS</h3>
+          <h3 data-i18n="footer.contact">CONTÁCTANOS</h3>
           <ul>
             <li><a href="mailto:info@tukuntech.pe">info@tukuntech.pe</a></li>
-            <li><a href="#inscripcion">Inscripción</a></li>
-            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#inscripcion" data-i18n="footer.signup">Inscripción</a></li>
+            <li><a href="#faq" data-i18n="footer.faq">Preguntas Frecuentes</a></li>
           </ul>
         </div>
       </div>
-      <p class="footer-copy">© 2024 TukunTech | Todos los derechos reservados.</p>
+      <p class="footer-copy">© 2024 TukunTech | <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+      </p>
     </div>
   </footer>
+
   <script src="js/main.js"></script>
 </body>
 
