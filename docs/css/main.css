@@ -1108,6 +1108,96 @@ body {
 }
 
 
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 4000;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .18s var(--ease-out);
+}
+.modal.is-open {
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  backdrop-filter: blur(2px);
+}
+.modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(720px, 92vw);
+  background: var(--color-secondary);
+  color: var(--color-text);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: clamp(16px, 3vw, 28px);
+  transform: translateY(8px) scale(.98);
+  transition: transform .18s var(--ease-out);
+}
+.is-open .modal__dialog { transform: translateY(0) scale(1); }
+
+.modal__title {
+  font-family: var(--font-base);
+  margin: 0 0 8px;
+  letter-spacing: .04em;
+  font-size: clamp(1.4rem, 2.6vw, 1.8rem);
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px; right: 8px;
+  appearance: none; border: 0; background: transparent;
+  font-size: 1.1rem; cursor: pointer; padding: 6px 10px; border-radius: 8px;
+}
+.modal__close:hover { background: rgba(0,0,0,.06); }
+
+.form { display: grid; gap: clamp(12px, 2vw, 18px); }
+.form__row {
+  display: grid; gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+.form__field { display: grid; gap: 6px; }
+.form__field label {
+  font-family: var(--font-text2); font-weight: var(--weight-medium);
+}
+.form__field input,
+.form__field select {
+  font-family: var(--font-text2);
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,.18);
+  border-radius: 10px;
+  background: #fff;
+  outline: none;
+  transition: box-shadow .12s ease, border-color .12s ease;
+}
+.form__field input:focus,
+.form__field select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(18,44,79,.14);
+}
+.error {
+  display: none;
+  color: #B9302A;
+  font-size: .85rem;
+}
+.form__field.is-invalid .error { display: block; }
+
+.form__actions {
+  display: flex; gap: 12px; justify-content: flex-end; margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .form__row { grid-template-columns: 1fr; }
+}
+
+
 
 
 

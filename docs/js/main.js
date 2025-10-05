@@ -289,4 +289,97 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  const openBtn = document.getElementById('open-contact');
+  const modal = document.getElementById('contact-modal');
+
+  if (openBtn && modal) {
+    const dialog = modal.querySelector('.modal__dialog');
+    const closeEls = modal.querySelectorAll('[data-close]');
+    const form = document.getElementById('contact-form');
+    let lastFocused = null;
+
+    const focusableSelectors = [
+      'a[href]', 'button:not([disabled])', 'textarea:not([disabled])',
+      'input:not([disabled])', 'select:not([disabled])', '[tabindex]:not([tabindex="-1"])'
+    ];
+
+    function openModal(e) {
+      if (e) e.preventDefault();
+      lastFocused = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      const firstField = form?.querySelector('input, select, button');
+      firstField?.focus();
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.removeEventListener('keydown', handleKeyDown);
+      lastFocused?.focus();
+    }
+
+    function handleKeyDown(e) {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'Tab') trapFocus(e);
+    }
+
+    function trapFocus(e) {
+      const focusables = dialog.querySelectorAll(focusableSelectors.join(','));
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        last.focus();
+        e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first.focus();
+        e.preventDefault();
+      }
+    }
+
+    function validateField(field) {
+      const wrapper = field.closest('.form__field');
+      if (!wrapper) return true;
+      let valid = true;
+
+      if (field.hasAttribute('required') && !field.value.trim()) valid = false;
+      if (valid && field.type === 'email') {
+        valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value);
+      }
+      if (valid && field.id === 'phone' && field.value.trim()) {
+        valid = /^[0-9+\s()-]{6,}$/.test(field.value);
+      }
+
+      wrapper.classList.toggle('is-invalid', !valid);
+      return valid;
+    }
+
+    form?.addEventListener('input', (e) => {
+      if (e.target && 'value' in e.target) validateField(e.target);
+    });
+
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const fields = form.querySelectorAll('input, select');
+      let allValid = true;
+      fields.forEach(f => { if (!validateField(f)) allValid = false; });
+      if (!allValid) return;
+
+      alert('¡Gracias! Hemos recibido tu contacto.');
+      form.reset();
+      closeModal();
+    });
+
+    openBtn.addEventListener('click', openModal);
+    closeEls.forEach(el => el.addEventListener('click', closeModal));
+    modal.addEventListener('click', (e) => {
+      if (e.target.hasAttribute('data-close')) closeModal();
+    });
+  }
+
 });
