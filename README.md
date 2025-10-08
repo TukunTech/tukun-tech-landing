@@ -43,8 +43,7 @@ A través de una narrativa clara y humanizada, la página pretende resaltar los 
 
 Además, la landing actúa como punto de contacto directo para que cuidadores y familiares interesados puedan obtener más información, conectarse con el equipo de desarrollo, o colaborar en programas piloto o de adopción temprana.
 
-En resumen, su objetivo es crear una experiencia digital informativa, cercana y confiable, que permita a los visitantes comprender el impacto de Tukun Tech en la vida cotidiana de quienes cuidan y acompañan a personas con condiciones cardíacas, reafirmando nuestro compromiso con la tecnología al servicio del bienestar y la salud accesible para todos.
----
+En resumen, su objetivo es crear una experiencia digital informativa, cercana y confiable, que permita a los visitantes comprender el impacto de Tukun Tech en la vida cotidiana de quienes cuidan y acompañan a personas con condiciones cardíacas, reafirmando nuestro compromiso con la tecnología al servicio del bienestar y la salud accesible para todos.---
 
 ## 📂 Estructura del proyecto
 
