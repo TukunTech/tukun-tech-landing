@@ -35,8 +35,15 @@ Convertirnos en una **plataforma líder en salud digital en Latinoamérica**, re
 
 ## 💡 Propósito de la Landing Page
 
-La landing page tiene como objetivo presentar la propuesta de **Tukun Tech** de manera clara y atractiva, permitiendo a los visitantes conocer la misión del proyecto, los beneficios del sistema de monitoreo y las oportunidades de contacto o colaboración.
+La landing page de Tukun Tech tiene como propósito principal comunicar de manera clara, empática y visualmente atractiva la propuesta de valor del proyecto, enfocada en familiares y cuidadores de adultos mayores o personas con enfermedades cardíacas crónicas.
 
+Este sitio busca transmitir confianza y accesibilidad, mostrando cómo nuestras soluciones tecnológicas pueden simplificar el monitoreo de la salud cardiovascular de sus seres queridos, brindando tranquilidad y apoyo continuo en su cuidado diario.
+
+A través de una narrativa clara y humanizada, la página pretende resaltar los beneficios del sistema de monitoreo no invasivo desarrollado por Tukun Tech, explicando cómo el dispositivo permite vigilar la frecuencia cardíaca y la saturación de oxígeno en tiempo real, y cómo las alertas inteligentes ayudan a detectar posibles riesgos de manera temprana.
+
+Además, la landing actúa como punto de contacto directo para que cuidadores y familiares interesados puedan obtener más información, conectarse con el equipo de desarrollo, o colaborar en programas piloto o de adopción temprana.
+
+En resumen, su objetivo es crear una experiencia digital informativa, cercana y confiable, que permita a los visitantes comprender el impacto de Tukun Tech en la vida cotidiana de quienes cuidan y acompañan a personas con condiciones cardíacas, reafirmando nuestro compromiso con la tecnología al servicio del bienestar y la salud accesible para todos.
 ---
 
 ## 📂 Estructura del proyecto
