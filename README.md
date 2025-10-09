@@ -80,3 +80,13 @@ Página principal con estructura semántica y secciones:
     - Sección de niveles de alerta (LEDs).
     - Modal de contacto.
     - Footer con enlaces sociales.
+
+## 🚀 Despliegue
+- En GitHub Pages <br>
+1. En el repositorio → Settings → Pages.
+2. Fuente: Deploy from a branch.
+3. Rama: main → Carpeta /docs.
+4. Guarda los cambios. <br>
+→ Se desplegará en: <br>
+https://<usuario>.github.io/<repositorio>/
+
