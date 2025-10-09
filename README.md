@@ -65,3 +65,19 @@ La carpeta docs/ aloja el sitio estático para permitir despliegue con GitHub Pa
     │   └── ...
 
 ```
+## 🧩 Detalles de los directorios
+- css/
+Contiene main.css con los estilos globales, layout responsivo y estilos del modal de contacto.
+- js/
+Contiene main.js con la lógica para abrir/cerrar el modal de contacto, animaciones básicas y manejo de eventos de UI.
+- img/
+Contiene todos los assets visuales, incluyendo íconos, logotipos, fondos y recursos de secciones como “Nuestro Equipo” o “Cómo Funciona”.
+- index.html
+  
+Página principal con estructura semántica y secciones:
+- Hero o portada con CTA.
+- Sección de misión y visión.
+- Sección explicativa del producto.
+- Sección de niveles de alerta (LEDs).
+- Modal de contacto.
+- Footer con enlaces sociales.
