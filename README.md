@@ -46,4 +46,22 @@ Además, la landing actúa como punto de contacto directo para que cuidadores y 
 En resumen, su objetivo es crear una experiencia digital informativa, cercana y confiable, que permita a los visitantes comprender el impacto de Tukun Tech en la vida cotidiana de quienes cuidan y acompañan a personas con condiciones cardíacas, reafirmando nuestro compromiso con la tecnología al servicio del bienestar y la salud accesible para todos.---
 
 ## 📂 Estructura del proyecto
+La carpeta docs/ aloja el sitio estático para permitir despliegue con GitHub Pages.
+```
+.
+├── .editorconfig
+├── .gitignore
+├── README.md
+└── docs/
+    ├── index.html               # Página principal
+    ├── css/
+    │   └── main.css             # Estilos del sitio
+    ├── js/
+    │   └── main.js              # Funcionalidad (interactividad y modales)
+    ├── img/                     # Recursos gráficos e íconos
+    │   ├── logo*.png
+    │   ├── bg*.png
+    │   ├── ic_*.png
+    │   └── ...
 
+```
