@@ -72,7 +72,7 @@ Contiene main.css con los estilos globales, layout responsivo y estilos del moda
 Contiene main.js con la lógica para abrir/cerrar el modal de contacto, animaciones básicas y manejo de eventos de UI.
 - img/ <br> 
 Contiene todos los assets visuales, incluyendo íconos, logotipos, fondos y recursos de secciones como “Nuestro Equipo” o “Cómo Funciona”.
-- index.html
+- index.html <br> 
 Página principal con estructura semántica y secciones:
     - Hero o portada con CTA.
     - Sección de misión y visión.
