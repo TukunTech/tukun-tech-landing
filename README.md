@@ -2,7 +2,7 @@
 
 ## 🌐 Descripción
 
-**Tukun Tech** es la landing page de nuestra startup enfocada en el desarrollo de soluciones tecnológicas para el monitoreo accesible y no invasivo de la salud cardiovascular. Este sitio presenta nuestra propuesta de valor, misión y visión, así como la información principal sobre nuestro producto y su impacto.
+**Tkun Tech** es la landing page de nuestra startup enfocada en el desarrollo de soluciones tecnológicas para el monitoreo accesible y no invasivo de la salud cardiovascular. Este sitio presenta nuestra propuesta de valor, misión y visión, así como la información principal sobre nuestro producto y su impacto.
 
 Las **enfermedades cardiovasculares** representan una de las principales causas de mortalidad en adultos mayores y personas con antecedentes cardíacos. El monitoreo actual de signos vitales suele ser invasivo, costoso o limitado a mediciones puntuales, lo que impide un seguimiento continuo y accesible.
 
