@@ -382,4 +382,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  document.getElementById('contact-form').addEventListener('submit', function () {
+    const topic = document.getElementById('topic').value || 'Sin tema';
+    document.getElementById('fs-subject').value = 'Contacto - ' + topic;
+  });
+
 });
