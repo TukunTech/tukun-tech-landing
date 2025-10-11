@@ -23,7 +23,8 @@
           <a href="#servicios" data-i18n="nav.product">PRODUCTO</a>
           <a href="#planes" data-i18n="nav.plans">PLANES</a>
           <a href="#mision-vision" data-i18n="nav.about">NOSOTROS</a>
-          <a class="chip" href="https://tukuntech-front.netlify.app/" aria-current="page" role="button" data-i18n="nav.home"> INICIO</a>
+          <a class="chip" href="https://tukuntech-front.netlify.app/" aria-current="page" role="button"
+            data-i18n="nav.home"> INICIO</a>
           <button type="button" id="lang-switch" class="lang-switch" aria-label="Cambiar idioma">
             ESP
           </button>
@@ -261,75 +262,64 @@
     </div>
   </section>
 
-<div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="contact-title">
-  <div class="modal__backdrop" data-close></div>
+  <div class="modal" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="contact-title">
+    <div class="modal__backdrop" data-close></div>
 
-  <div class="modal__dialog" role="document">
-    <button class="modal__close" type="button" aria-label="Cerrar" data-close>✕</button>
+    <div class="modal__dialog" role="document">
+      <button class="modal__close" type="button" aria-label="Cerrar" data-close>✕</button>
 
-    <h3 id="contact-title" class="modal__title" data-i18n="contact.title">Contáctanos</h3>
+      <h3 id="contact-title" class="modal__title" data-i18n="contact.title">Contáctanos</h3>
 
-    <form id="contact-form"
-          class="form"
-          action="https://formsubmit.co/57587f00723e8aa420d6d57bbe2715f7"
-          method="POST"
-          accept-charset="UTF-8"
-          novalidate>
+      <form id="contact-form" class="form" action="https://formsubmit.co/0490db2dc7ea44ea6ae1324ab9895bdb" method="POST">
 
-      <!-- Config FormSubmit -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://tukuntech.github.io/tukun-tech-landing/">
-      <input type="hidden" name="_subject" id="fs-subject" value="Nuevo contacto">
-      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-
-      <div class="form__row">
-        <div class="form__field">
-          <label for="firstName" data-i18n="contact.firstName">Nombre</label>
-          <input id="firstName" name="Nombre" type="text" autocomplete="given-name" required />
-          <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="firstName" data-i18n="contact.firstName">Nombre</label>
+            <input id="firstName" name="Nombre" type="text" autocomplete="given-name" required />
+            <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
+          </div>
+          <div class="form__field">
+            <label for="lastName" data-i18n="contact.lastName">Apellido</label>
+            <input id="lastName" name="Apellido" type="text" autocomplete="family-name" required />
+            <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
+          </div>
         </div>
-        <div class="form__field">
-          <label for="lastName" data-i18n="contact.lastName">Apellido</label>
-          <input id="lastName" name="Apellido" type="text" autocomplete="family-name" required />
-          <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
-        </div>
-      </div>
 
-      <div class="form__row">
-        <div class="form__field">
-          <label for="email" data-i18n="contact.email">Correo</label>
-          <input id="email" name="email" type="email" autocomplete="email" required />
-          <small class="error" data-i18n="contact.error.email">Ingresa un correo válido</small>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="email" data-i18n="contact.email">Correo</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <small class="error" data-i18n="contact.error.email">Ingresa un correo válido</small>
+          </div>
+          <div class="form__field">
+            <label for="phone" data-i18n="contact.phone">Celular</label>
+            <input id="phone" name="Celular" type="tel" inputmode="tel" pattern="^[0-9+\\s()-]{6,}$" autocomplete="tel"
+              required />
+            <small class="error" data-i18n="contact.error.phone">Ingresa un número válido</small>
+          </div>
         </div>
-        <div class="form__field">
-          <label for="phone" data-i18n="contact.phone">Celular</label>
-          <input id="phone" name="Celular" type="tel" inputmode="tel" pattern="^[0-9+\\s()-]{6,}$" autocomplete="tel" required />
-          <small class="error" data-i18n="contact.error.phone">Ingresa un número válido</small>
-        </div>
-      </div>
 
-      <div class="form__row">
-        <div class="form__field">
-          <label for="topic" data-i18n="contact.topic">Tema</label>
-          <select id="topic" name="Tema" required>
-            <option value="" selected disabled data-i18n="contact.topic.placeholder">Selecciona un tema</option>
-            <option value="Información" data-i18n="contact.topic.info">Información</option>
-            <option value="Reserva" data-i18n="contact.topic.booking">Reserva</option>
-            <option value="Soporte" data-i18n="contact.topic.support">Soporte</option>
-            <option value="Otros" data-i18n="contact.topic.other">Otros</option>
-          </select>
-          <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
+        <div class="form__row">
+          <div class="form__field">
+            <label for="topic" data-i18n="contact.topic">Tema</label>
+            <select id="topic" name="Tema" required>
+              <option value="" selected disabled data-i18n="contact.topic.placeholder">Selecciona un tema</option>
+              <option value="Información" data-i18n="contact.topic.info">Información</option>
+              <option value="Reserva" data-i18n="contact.topic.booking">Reserva</option>
+              <option value="Soporte" data-i18n="contact.topic.support">Soporte</option>
+              <option value="Otros" data-i18n="contact.topic.other">Otros</option>
+            </select>
+            <small class="error" data-i18n="contact.error.required">Este campo es obligatorio</small>
+          </div>
         </div>
-      </div>
 
-      <div class="form__actions">
-        <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar</button>
-        <button type="button" class="btn btn-secondary" data-close data-i18n="contact.cancel">Cancelar</button>
-      </div>
-    </form>
+        <div class="form__actions">
+          <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar</button>
+          <button type="button" class="btn btn-secondary" data-close data-i18n="contact.cancel">Cancelar</button>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
 
 
 
